@@ -32,7 +32,6 @@ namespace ConsoleApp13
 
                         tab[i, j] = Convert.ToInt32(data[j]);
                     }
-
                 }
 
                 int[,] tmp = new int[n, 100];
