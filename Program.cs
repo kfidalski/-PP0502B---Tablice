@@ -11,10 +11,8 @@ namespace ConsoleApp13
         static void Main(string[] args)
         {
             // liczba iteracji
-
-
              int n = Convert.ToInt32(Console.ReadLine());
-          
+
             int elements;
             string input = "";
             int[] newElements = new int[100];
@@ -29,15 +27,11 @@ namespace ConsoleApp13
                     elements = Convert.ToInt32(data[0]);
                     countElements[i] = elements;
 
-
-
                     for (int j = 1; j <= countElements[i]; j++)
                     {
 
                         tab[i, j] = Convert.ToInt32(data[j]);
                     }
-
-
 
                 }
 
@@ -51,26 +45,18 @@ namespace ConsoleApp13
                     for (a = 1, x = countElements[i]; x > 0; x--, a++)
                     {
                         tmp[i, a] = tab[i, x];
-
                     }
                 }
-
 
                 for (int i = 0; i < n; i++)
                 {
                     for (int j = 1; j <= countElements[i]; j++)
                     {
-
                         Console.Write($"{tmp[i, j]} ");
                     }
                     Console.WriteLine("");
                 }
-
-
-
             }
-
-
             Console.ReadKey();
         }
     }
